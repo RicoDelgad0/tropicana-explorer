@@ -1,16 +1,16 @@
-AFRAME.registerComponent('teleport-camera-rig', {
+AFRAME.registerComponent("teleport-camera-rig", {
   multiple: true,
 
   schema: {
     // The camera rig must be a direct child of <a-scene>
-    rig: {type: 'selector', default: '#camera-rig'},
-    camera: {type: 'selector', default: '[camera]'},
-    on: {type: 'string', default: 'click'},
-    x: {type: 'number', default: 0},
-    y: {type: 'number', default: 0},
-    z: {type: 'number', default: 0},
-    handleRotation: {type: 'boolean', default: true},
-    rot: {type: 'number', default: 0}, // rotation in degrees
+    rig: { type: "selector", default: "#camera-rig" },
+    camera: { type: "selector", default: "[camera]" },
+    on: { type: "string", default: "click" },
+    x: { type: "number", default: 0 },
+    y: { type: "number", default: 0 },
+    z: { type: "number", default: 0 },
+    handleRotation: { type: "boolean", default: true },
+    rot: { type: "number", default: 0 }, // rotation in degrees
   },
 
   init: function () {
@@ -30,7 +30,9 @@ AFRAME.registerComponent('teleport-camera-rig', {
     if (this.data.handleRotation) {
       // Take the camera quaternion
       const quaternion = new THREE.Quaternion();
-      quaternion.setFromEuler(new THREE.Euler(0, this.data.camera.object3D.rotation.y, 0));
+      quaternion.setFromEuler(
+        new THREE.Euler(0, this.data.camera.object3D.rotation.y, 0)
+      );
       // invert it to nullify the camera rotation
       quaternion.invert();
       // convert this.data.rot to a quaternion
@@ -53,5 +55,4 @@ AFRAME.registerComponent('teleport-camera-rig', {
   remove: function () {
     this.el.removeEventListener(this.data.on, this.onEvent);
   },
-
 });

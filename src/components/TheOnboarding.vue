@@ -18,7 +18,7 @@
 <template>
   <div id="onboarding" v-if="showOnboarding">
     <div>
-      <h1>A-Frame + Vite + Vue Boilerplate</h1>
+      <h1>Hidden objects game</h1>
       <p v-if="!loaded">loading...</p>
       <button v-if="loaded" @click="enterScene()">Enter scene</button>
       <div class="licences">
@@ -26,8 +26,7 @@
         <h4>Movement modes support</h4>
         <ul>
           <li>
-            Desktop – Keyboard for move (WASD or Arrows keys) + Mouse for look
-            control (Drag and drop)
+            Desktop – Keyboard for move (WASD or Arrows keys) + Mouse for look + click for interaction
           </li>
           <li>
             Mobile – 1x Finger touch to go forward + 2x Fingers touch to go
@@ -68,18 +67,69 @@
           </dd>
 
           <dt>
-            <a href="https://sketchfab.com/3d-models/vr-gallery-1ac32ed62fdf424498acc146fad31f7e" target="_blank">VR Gallery</a>
+            <a href="https://sketchfab.com/3d-models/captains-quarters-a5c54257755e47ccb47b5d8bc7482d7e" target="_blank">Captain's quarters | Scene</a>
           </dt><dd>
-            by <a href="https://sketchfab.com/mvrc.art" target="_blank">Maxim Mavrichev</a>
-            under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+            by <a href="https://sketchfab.com/TheMadraver" target="_blank">TheMadraver</a>
           </dd>
 
           <dt>
-            <a href="https://sketchfab.com/3d-models/3d-gallery-for-vr-projects-68f77ed8558c4bd59e0a13e2cc9d1fd1" target="_blank">Physic room model</a>
+            <a href="https://sketchfab.com/3d-models/the-hills-6d7faf10658e44279da7356cbe749d56" target="_blank">Hills</a>
           </dt><dd>
-            by <a href="https://sketchfab.com/tekuto1s" target="_blank">tekuto1s</a>
-            under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+            by <a href="https://sketchfab.com/mhart" target="_blank">mhart</a>
           </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/lowpoly-glass-bottle-with-cork-1-17f039908e234769adfce88478adca55" target="_blank">Potion bottle</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/Judith.Samaniego" target="_blank">Epitaph Crimson</a>
+          </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/fancy-gramophone-d523fdd39afd4a7db6bbb5ba0d2a8064" target="_blank">Fancy gramophone</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/jamiemcfarlane" target="_blank">Jamie McFarlane</a>
+          </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/skull-b78e4e6b29b2430293edd9c99d88a64e" target="_blank">Skull</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/bumstrum" target="_blank">DJ Maesen</a>
+          </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/lentes-rv-headset-vr-6913032c25cf4877a6d864ed2538a3ef" target="_blank">VR Headset</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/wtronmx" target="_blank">WTRONMX</a>
+          </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/pistol-43-tactical-free-lowpoly-ec43fa0124084f739887e322646912bf" target="_blank">Pistol</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/dan741vlasov" target="_blank">Vlasov Daniil</a>
+          </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/nes-controller-free-5f85c2e259bd4ab5845d482ff4f1c039" target="_blank">NES Controller</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/donnichols" target="_blank">donnichols</a>
+          </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/minecraft-diamond-block-bb035ac458e8472a9bc4341819d4f441" target="_blank">Minecraft diamond block</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/Onilak" target="_blank">Onilak24</a>
+          </dd>
+
+          <dt>
+            <a href="https://sketchfab.com/3d-models/league-of-legends-teemo-zombicide-survivor-cb461d09f9594d1fb87763040d9c5f11" target="_blank">Teemo statue</a>
+          </dt><dd>
+            by <a href="https://sketchfab.com/toxicsquall" target="_blank">Toxicsquall</a>
+          </dd>
+
+
+
+
+
         </dl>
       </div>
     </div>
